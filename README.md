@@ -9,3 +9,12 @@ For each hashing algorithm `<HASHALGO>` (MD5, SHA256, ...), you will find:
 * release named `<HASHALGO>`
 * a CSV file `<HASHALGO>.csv` listing all `<hashsum>;<filename>` pairs
 * markdown document `<HASHALGO>.md` with links of the form `* [<filename>](https://github.com/ALive-Research/ALiveResearchTestingData/releases/download/<HASHALGO>/<checksum>)` (this file is regenerated on each upload from the CSV file, therefore files should be renamed or deleted by editing the CSV file)
+
+Download files
+-----------------
+
+Clone the SlicerTestingData repo, and run this command:
+```
+python .\process_release_data.py download --github-token ###### --github-repo ALive-Research/ALiveResearchTestingData
+```
+
